@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+
+  
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Retail</title>
+
+    <meta name="description" content="Описание">
+    <meta name="keywords" content="Ключевики">
+    <meta name="author" content="">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+	
+	
+    <script>
+        const totalFontSize = function() {
+            const pageWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;  
+            
+            if (pageWidth > 2000) {
+                document.documentElement.style.fontSize = '14px';
+            } else if (pageWidth > 992) {
+                let value = (pageWidth * 10 / 1920).toFixed(2);
+                document.documentElement.style.fontSize = value + 'px';
+            } else if (pageWidth > 576) {
+                document.documentElement.style.fontSize = '12px';
+            } else {
+                document.documentElement.style.fontSize = '10px';
+            }
+        };
+
+        totalFontSize();
+		
+		window.addEventListener('resize', totalFontSize);
+		
+    </script>
+    	
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240308123816"> 
+	
+	<link rel="stylesheet" href="css/style.min.css?_v=20240308123816">
+
+
+
+</head>
+
+<body >
+
+  
+
+  <header class="header">
+  <div class="header__container">
+    <div class="header__burger">
+      <svg><use xlink:href="img/icons/icons.svg#menu"></use></svg>
+    </div>
+    <div class="header__logo logo">
+      <picture>
+        <source media="(max-width: 992px)" srcset="img/header-logo-mob.png">
+        <img src="img/header-logo.png" alt="Lavuri toys" loading="lazy" class="img-full">
+      </picture>
+    </div>
+    <div class="header__row">
+      <div class="menu" id="menu">
+  <div class="menu__close">
+    <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
+  </div>
+  <div class="menu__wrap">
+    <div class="menu__logo logo">
+      <picture><source srcset="img/header-logo.webp" type="image/webp"><img src="img/header-logo.png" alt="Lavuri toys" loading="lazy" class="img-full"></picture>
+    </div>
+    <div class="menu__body">
+      <nav class="menu__nav menu__nav--retail nav">
+  <a href="#" class="nav__link">Наші роботи</a>
+  <a href="#" class="nav__link">Вартість</a>
+  <a href="#" class="nav__link">Опт</a>
+  <a href="#" class="nav__link">Відгуки</a>
+  <a href="#" class="nav__link">Контакти</a>
+</nav>
+
+      <div class="menu__lang lang">
+        <button class="lang__btn active">Ua</button>
+        <button class="lang__btn">Ru</button>
+      </div>
+    </div>
+    <a href="#" class="menu__btn btn btn--green">
+      <span>Зробити замовлення</span>
+      <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+    </a>
+    <div class="menu__social social">
+      <a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-instagram"></use></svg>
+</a>
+<a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-telegram"></use></svg>
+</a>
+<a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-viber"></use></svg>
+</a>
+<a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-whatsapp"></use></svg>
+</a>
+    </div>
+  </div>
+</div>
+
+      <a href="telto:+380631798384" class="btn btn--border btn--phone">
+        <svg><use xlink:href="img/icons/icons.svg#phone"></use></svg>
+        <span>+38 (063) 179 83 84</span>
+      </a>
+    </div>
+  </div>
+</header>
+
+  <main>
+
+    <section class="hero">
+  <div class="hero__container">
+    <div class="hero__body">
+      <div class="hero__wrap">
+        <h1>ШИЄМО ІГРАШКИ на замовлення по вашим малюнкам</h1>
+        <h4>
+          <span class="bg-text--orange">Унікальний подарунок</span>
+          для дітей, друзів <br class="mob-none"> та близьких. Шиємо
+          <span class="bg-text--orange">від 1 шт</span>
+        </h4>
+        <div class="hero__btns">
+          <a href="#modal_consult" data-fancybox class="btn btn--green">
+            <span>Замовити іграшку</span>
+            <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+          </a>
+          <a href="#" class="btn btn--border">+38 (063) 179 83 84 </a>
+        </div>
+      </div>
+      <div class="hero__picture">
+        <picture>
+          <source media="(max-width: 992px)" srcset="img/retail/hero-img-mob.png" />
+          <img src="img/retail/hero-img.png" alt="Lavuri toys" loading="lazy" class="img-full" />
+        </picture>
+      </div>
+    </div>
+    <div class="hero__social social"><a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-instagram"></use></svg>
+</a>
+<a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-telegram"></use></svg>
+</a>
+<a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-viber"></use></svg>
+</a>
+<a href="#" class="social__item">
+  <svg><use xlink:href="img/icons/icons.svg#social-whatsapp"></use></svg>
+</a></div>
+  </div>
+</section>
+
+    <section class="section">
+  <section class="section__container section__container--130pt section__container--2pb">
+    <div class="section__head section__head--work">
+      <h2>Наші роботи</h2>
+    </div>
+    <div class="work">
+      <div class="work__slider-arrow work__slider-arrow_prev">
+        <svg><use xlink:href="img/icons/icons.svg#arrow_left_slider"></use></svg>
+      </div>
+      <div class="work__slider">
+        <div class="work-slider__item">
+          <div class="work-slider-item__body">
+            <div class="work-slider-item__picture">
+              <picture><source srcset="img/retail/our-work1.webp" type="image/webp"><img src="img/retail/our-work1.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+            <div class="work-slider-item__content">
+              <h5 class="work-slider-item__title">Іграшка “Сиреноголовий”</h5>
+            </div>
+          </div>
+        </div>
+        <div class="work-slider__item">
+          <div class="work-slider-item__body">
+            <div class="work-slider-item__picture">
+              <picture><source srcset="img/retail/our-work2.webp" type="image/webp"><img src="img/retail/our-work2.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+            <div class="work-slider-item__content">
+              <h5 class="work-slider-item__title">Іграшка “Сиреноголовий”</h5>
+            </div>
+          </div>
+        </div>
+        <div class="work-slider__item">
+          <div class="work-slider-item__body">
+            <div class="work-slider-item__picture">
+              <picture><source srcset="img/retail/our-work3.webp" type="image/webp"><img src="img/retail/our-work3.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+            <div class="work-slider-item__content">
+              <h5 class="work-slider-item__title">Іграшка “Сиреноголовий”</h5>
+            </div>
+          </div>
+        </div>
+        <div class="work-slider__item">
+          <div class="work-slider-item__body">
+            <div class="work-slider-item__picture">
+              <picture><source srcset="img/retail/our-work4.webp" type="image/webp"><img src="img/retail/our-work4.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+            <div class="work-slider-item__content">
+              <h5 class="work-slider-item__title">Іграшка “Сиреноголовий”</h5>
+            </div>
+          </div>
+        </div>
+        <div class="work-slider__item">
+          <div class="work-slider-item__body">
+            <div class="work-slider-item__picture">
+              <picture><source srcset="img/retail/our-work5.webp" type="image/webp"><img src="img/retail/our-work5.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+            <div class="work-slider-item__content">
+              <h5 class="work-slider-item__title">Іграшка “Сиреноголовий”</h5>
+            </div>
+          </div>
+        </div>
+        <div class="work-slider__item">
+          <div class="work-slider-item__body">
+            <div class="work-slider-item__picture">
+              <picture><source srcset="img/retail/our-work4.webp" type="image/webp"><img src="img/retail/our-work4.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+            <div class="work-slider-item__content">
+              <h5 class="work-slider-item__title">Іграшка “Сиреноголовий”</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="work__slider-arrow work__slider-arrow_next">
+        <svg><use xlink:href="img/icons/icons.svg#arrow_right_slider"></use></svg>
+      </div>
+    </div>
+  </section>
+</section>
+
+    <section class="section section--choose">
+  <div class="section__container section__container--p">
+    <div class="section__head">
+      <h2>чОМУ ВАРТО <br class="mob"> ОБРАТИ <span class="text--orange">lAVURI</span></h2>
+    </div>
+    <div class="choose">
+      <div class="choose__item choose-item">
+        <div class="choose-item__head">
+          <div class="choose-item__icon">
+            <svg><use xlink:href="img/icons/icons.svg#should-choose-icon1"></use></svg>
+          </div>
+          <h5 class="choose-item__title">Досвідчені майстри</h5>
+        </div>
+        <p class="choose-item__text">
+          Наші майстри мають <b>більше 10 років досвіду</b> у виготовленні іграшок як індивідуальних так і корпоративних
+          замовлень
+        </p>
+      </div>
+      <div class="choose__item choose-item">
+        <div class="choose-item__head">
+          <div class="choose-item__icon">
+            <svg><use xlink:href="img/icons/icons.svg#should-choose-icon2"></use></svg>
+          </div>
+          <h5 class="choose-item__title">Висока якість</h5>
+        </div>
+        <p class="choose-item__text">
+          Ми <b>використовуємо гіпоалергенні матеріали,</b> які дуже добре реагують на вологу, тримають форму, швидко сохнуть
+          та не електризуються. <b>Наші іграшки можна прати</b>
+        </p>
+      </div>
+      <div class="choose__item choose-item">
+        <div class="choose-item__head">
+          <div class="choose-item__icon">
+            <svg><use xlink:href="img/icons/icons.svg#should-choose-icon3"></use></svg>
+          </div>
+          <h5 class="choose-item__title">Ручна робота</h5>
+        </div>
+        <p class="choose-item__text">
+          У виготовленні кожної іграшки використовується <b>100% ручна робота.</b> Ми стараємось робити іграшки максимально
+          відповідними до вашого замовлення, враховуючи всі деталі та пропорції
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="howwework">
+  <div class="howwework__container">
+    <div class="howwework__head">
+      <h2>Як ми працюємо</h2>
+    </div>
+    <div class="howwework__body">
+      <div class="howwework__item howwework-item">
+        <div class="howwework-item__icon">
+          <img src="img/retail/how-we-work-icon1.svg" alt="" loading="lazy" class="img-full" />
+        </div>
+        <div>
+          <h5 class="howwework-item__title">Ідея</h5>
+          <p class="howwework-item__text">
+            Ви відправляєте нам фото персонажа або малюнка. Ми підбираємо необхідні матеріали для іграшки
+          </p>
+        </div>
+      </div>
+      <div class="howwework__item howwework-item">
+        <div class="howwework-item__icon">
+          <img src="img/retail/how-we-work-icon2.svg" alt="" loading="lazy" class="img-full" />
+        </div>
+        <div>
+          <h5 class="howwework-item__title">Калькуляція</h5>
+          <p class="howwework-item__text">
+            Наш спеціаліст зв’язується з вами для узгодження деталей та озвучення вартості та термінів виготовлення
+            іграшки.
+          </p>
+        </div>
+      </div>
+      <div class="howwework__item howwework-item">
+        <div class="howwework-item__icon">
+          <img src="img/retail/how-we-work-icon3.svg" alt="" loading="lazy" class="img-full" />
+        </div>
+        <div>
+          <h5 class="howwework-item__title">Реалізація</h5>
+          <p class="howwework-item__text">Після внесення оплати замовлення передається в роботу для пошиття іграшки</p>
+        </div>
+      </div>
+      <div class="howwework__item howwework-item">
+        <div class="howwework-item__icon">
+          <img src="img/retail/how-we-work-icon4.svg" alt="" loading="lazy" class="img-full" />
+        </div>
+        <div>
+          <h5 class="howwework-item__title">Доставка</h5>
+          <p class="howwework-item__text">
+            Відправляємо вам фото готової іграшки та номер накладної перевізника (Нової Пошти, Укрпошти). Вартість
+            доставки сплачується при отриманні.
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="howwework__btn btn btn--green btn--big">
+      <span>Замовити іграшку</span>
+      <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+    </a>
+    <div class="howwework__img">
+      <picture><source srcset="img/retail/how-we-work-img.webp" type="image/webp"><img src="img/retail/how-we-work-img.png" alt="" loading="lazy" class="img-full" /></picture>
+    </div>
+  </div>
+</section>
+
+    <section class="notdo">
+  <div class="notdo__container">
+    <h2 class="notdo__title">що ми не робимо</h2>
+    <div class="notdo__body">
+      <div class="notdo__item notdo-item">
+        <div class="notdo-item__picture">
+          <picture><source srcset="img/retail/not-img1.webp" type="image/webp"><img src="img/retail/not-img1.png" alt="" loading="lazy" class="img-full" /></picture>
+          <div class="notdo-item__picture-not">
+            <img src="img/retail/not.svg" alt="" loading="lazy" />
+          </div>
+        </div>
+        <p class="notdo-item__text">Іграшки, які схожі на реальних людей або реальних тварин</p>
+      </div>
+      <div class="notdo__item notdo-item">
+        <div class="notdo-item__picture">
+          <picture><source srcset="img/retail/not-img2.webp" type="image/webp"><img src="img/retail/not-img2.png" alt="" loading="lazy" class="img-full" /></picture>
+          <div class="notdo-item__picture-not">
+            <img src="img/retail/not.svg" alt="" loading="lazy" />
+          </div>
+        </div>
+        <p class="notdo-item__text">Іграшки, у вигляді копій реального транспорту</p>
+      </div>
+      <div class="notdo__item notdo-item">
+        <div class="notdo-item__picture">
+          <picture><source srcset="img/retail/not-img3.webp" type="image/webp"><img src="img/retail/not-img3.png" alt="" loading="lazy" class="img-full" /></picture>
+          <div class="notdo-item__picture-not">
+            <img src="img/retail/not.svg" alt="" loading="lazy" />
+          </div>
+        </div>
+        <p class="notdo-item__text">Вироби, що не стосуються нашої діяльності</p>
+      </div>
+    </div>
+    <picture class="notdo__decor">
+      <source media="(max-width: 992px)" srcset="img/retail/not-decor-mob.svg">
+      <img src="img/retail/not-decor.svg" alt="" loading="lazy">
+    </picture>
+  </div>
+</section>
+
+    <section class="reviews">
+  <div class="reviews__container">
+    <h2 class="reviews__title">ВІДГУКИ наших клієнтів</h2>
+    <div class="reviews__slider">
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="reviews-slider__item swiper-slide">
+            <div class="reviews-slider__item-bg">
+              <picture>
+                <source media="(max-width: 992px)" srcset="img/retail/reviews-item-bg-mob.png" />
+                <img src="img/retail/reviews-item-bg.png" alt="" loading="lazy" class="img-full" />
+              </picture>
+            </div>
+            <div class="reviews-slider__item-review">
+              <picture><source srcset="img/retail/reviews1.webp" type="image/webp"><img src="img/retail/reviews1.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="reviews-slider__item swiper-slide">
+            <div class="reviews-slider__item-bg">
+              <picture>
+                <source media="(max-width: 992px)" srcset="img/retail/reviews-item-bg-mob.png" />
+                <img src="img/retail/reviews-item-bg.png" alt="" loading="lazy" class="img-full" />
+              </picture>
+            </div>
+            <div class="reviews-slider__item-review">
+              <picture><source srcset="img/retail/reviews2.webp" type="image/webp"><img src="img/retail/reviews2.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="reviews-slider__item swiper-slide">
+            <div class="reviews-slider__item-bg">
+              <picture>
+                <source media="(max-width: 992px)" srcset="img/retail/reviews-item-bg-mob.png" />
+                <img src="img/retail/reviews-item-bg.png" alt="" loading="lazy" class="img-full" />
+              </picture>
+            </div>
+            <div class="reviews-slider__item-review">
+              <picture><source srcset="img/retail/reviews3.webp" type="image/webp"><img src="img/retail/reviews3.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+          <div class="reviews-slider__item swiper-slide">
+            <div class="reviews-slider__item-bg">
+              <picture>
+                <source media="(max-width: 992px)" srcset="img/retail/reviews-item-bg-mob.png" />
+                <img src="img/retail/reviews-item-bg.png" alt="" loading="lazy" class="img-full" />
+              </picture>
+            </div>
+            <div class="reviews-slider__item-review">
+              <picture><source srcset="img/retail/reviews4.webp" type="image/webp"><img src="img/retail/reviews4.png" alt="" loading="lazy" class="img-full" /></picture>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-slider__pag slider__pagination">
+          <div class="pag"></div>
+        </div>
+      </div>
+      <div class="reviews-slider__arrow_prev slider__arrow slider__arrow_prev">
+        <svg><use xlink:href="img/icons/icons.svg#arrow_left_slider"></use></svg>
+      </div>
+      <div class="reviews-slider__arrow_next slider__arrow slider__arrow_next">
+        <svg><use xlink:href="img/icons/icons.svg#arrow_right_slider"></use></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <section class="price">
+  <div class="price__container">
+    <div class="price__wrap">
+      <div class="price__body">
+        <form action="/" class="form" id="price_form">
+          <h3 class="form__title">Дізнайтесь вартість та терміни пошиву вашої іграшки</h3>
+          <p class="form__text">Заповніть форму щоб отримати детальну інформацію</p>
+          <div class="form__group">
+            <div class="form__icon">
+              <svg><use xlink:href="img/icons/icons.svg#input_name"></use></svg>
+            </div>
+            <input type="text" name="name" class="form__input" placeholder="Ваше ім’я">
+          </div>
+          <div class="form__group">
+            <div class="form__icon">
+              <svg><use xlink:href="img/icons/icons.svg#input__phone"></use></svg>
+            </div>
+            <input type="phone" name="tel" class="form__input" placeholder="+380 _ _ _">
+          </div>
+          <div class="upload-file__wrapper">
+            <input type="file" name="files[]" id="upload-file__input_1" class="upload-file__input" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip" multiple>
+            <label class="upload-file__label" for="upload-file__input_1">
+              <p class="upload-file__p">Завантажити фото</p>
+              <svg class="upload-file__icon"><use xlink:href="img/icons/icons.svg#input__download"></use></svg>
+            </label>
+            <div class="upload-file__text"></div>
+          </div>
+          <textarea name="message" class="form__textarea" placeholder="Опишіть іграшку. Можете вказати бажані розміри та матеріал...."></textarea>
+          <div class="chbox">
+            <label class="chbox__label">
+              <input type="checkbox" class="chbox__input" value="" >
+              <span class="chbox__icon"></span>
+              <span class="chbox__text">Реєструючись я надаю згоду на обробку своїх персональних даних відповідно до <a href="#">Політики конфідеційності</a></span>
+            </label>
+          </div>
+          <button type="submit" class="form__btn btn btn--orange">
+            <span>Надіслати</span>
+            <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+          </button>
+        </form>
+      </div>
+      <div class="price__picture">
+        <picture><source srcset="img/retail/form-img.webp" type="image/webp"><img src="img/retail/form-img.png" alt="" loading="lazy" class="img-full"></picture>
+      </div>
+    </div>
+  </div>
+</section>
+    <section class="opt">
+  <div class="opt__container">
+    <div class="opt__wrap">
+      <div class="opt__col">
+        <h2 class="opt__title">ОПТ <span class="text--orange">LAVURI</span></h2>
+        <h4 class="opt__subtitle">
+          У нас ви можете придбати <span class="bg-text--orange">м’які іграшки оптом</span> з вашим логотипом
+          <span class="bg-text--orange">від 100 шт</span> <br />
+          Подарунки у вашому фірмовому стилі завжди будуть унікальними та впізнаваними.
+        </h4>
+        <div class="opt__picture">
+          <picture><source srcset="img/retail/opt-img.webp" type="image/webp"><img src="img/retail/opt-img.png" alt="" loading="lazy" class="img-full" /></picture>
+        </div>
+      </div>
+      <div class="opt__col">
+        <div class="opt__item opt-item">
+          <div class="opt-item__head">
+            <div class="opt-item__icon">
+              <img src="img/retail/opt-icon1.svg" alt="" loading="lazy" class="img-full" />
+            </div>
+            <h5 class="opt-item__title">Додаткова реклама</h5>
+          </div>
+          <p class="opt-item__text">
+            Корпоративна іграшка з логотипом — ще один <b>спосіб розповісти про себе партнерам та покупцям.</b> Це вид реклами,
+            який постійно та ненав’язливо нагадуватиме про вашу компанію.
+          </p>
+        </div>
+        <div class="opt__item opt-item">
+          <div class="opt-item__head">
+            <div class="opt-item__icon">
+              <img src="img/retail/opt-icon2.svg" alt="" loading="lazy" class="img-full" />
+            </div>
+            <h5 class="opt-item__title">Доступні ціни</h5>
+          </div>
+          <p class="opt-item__text"><b>Чим більше ви замовляєте, тим доступніша ціна</b> за кожну одиницю</p>
+        </div>
+        <div class="opt__item opt-item">
+          <div class="opt-item__head">
+            <div class="opt-item__icon">
+              <img src="img/retail/opt-icon3.svg" alt="" loading="lazy" class="img-full" />
+            </div>
+            <h5 class="opt-item__title">Індивідуальний підхід та повний супровід</h5>
+          </div>
+          <p class="opt-item__text">
+            Ми надаємо <b>персоналізований підхід та супровід на кожному етапі</b> виробництва, починаючи від створення макету
+            і закінчуючи пошиттям усього тиражу
+          </p>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="opt__btn btn btn--green">
+      <span>Замовити іграшку</span>
+      <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+    </a>
+  </div>
+</section>
+
+    <section class="question">
+  <div class="question__container">
+    <div class="question__row question-row">
+      <div class="question-row__img">
+        <picture>
+          <source media="(max-width: 992px)" srcset="img/retail/question-decor-mob.png" />
+          <img src="img/retail/question-decor.png" alt="" loading="lazy" class="img-full" />
+        </picture>
+      </div>
+      <h2 class="question-row__title">Лишись питання? Зв’яжіться з нами</h2>
+      <div class="question-row__col">
+        <a href="tel:+380631798384" class="question-row__link">+38 (063) 179 83 84</a>
+        <a href="mailto:lavuri.toys@gmail.com" class="question-row__link">lavuri.toys@gmail.com</a>
+        <div class="question-row__social social">
+          <a href="#" class="social__item">
+            <svg><use xlink:href="img/icons/icons.svg#social-viber"></use></svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg><use xlink:href="img/icons/icons.svg#social-telegram"></use></svg>
+          </a>
+          <a href="#" class="social__item">
+            <svg><use xlink:href="img/icons/icons.svg#social-whatsapp"></use></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="question__item">
+      <p class="question-item__text">Приєднуйтесь до нас в <b>Instagram</b></p>
+      <div class="question-item__social">
+        <a href="#" class="social__item">
+          <svg><use xlink:href="img/icons/icons.svg#social-instagram"></use></svg>
+        </a>
+      </div>
+      <a href="#" class="question-item__link">@lavuri.toys</a>
+      <div class="question-item__mouse">
+        <picture><source srcset="img/retail/question-mouse.webp" type="image/webp"><img src="img/retail/question-mouse.png" alt="" loading="lazy" class="img-full"></picture>
+      </div>
+    </div>
+    <div class="question__picture">
+      
+      <picture>
+        <source media="(max-width: 992px)" srcset="img/retail/question-img-mob.png" />
+        <img src="img/retail/question-img.png" alt="" loading="lazy" class="img-full" />
+      </picture>
+    </div>
+  </div>
+</section>
+
+   
+  </main>
+
+  <!-- END main page -->
+
+  <footer class="footer retail">
+  <div class="footer__container">
+    <div class="footer__wrap">
+      <div class="footer__logo logo">
+        <picture>
+          <source media="(max-width: 992px)" srcset="img/footer-logo-mob.png">
+          <img src="img/footer-logo.png" alt="Lavuri toys" loading="lazy" class="img-full">
+        </picture>
+      </div>
+      <nav class="footer__nav nav">
+  <a href="#" class="nav__link">Наші роботи</a>
+  <a href="#" class="nav__link">Вартість</a>
+  <a href="#" class="nav__link">Опт</a>
+  <a href="#" class="nav__link">Відгуки</a>
+  <a href="#" class="nav__link">Контакти</a>
+</nav>
+
+    </div>
+    <a href="telto:+380631798384" class="btn btn--whiteb btn--phone">
+      <svg><use xlink:href="img/icons/icons.svg#phone"></use></svg>
+      <span>+38 (063) 179 83 84</span>
+    </a>
+  </div>
+</footer>
+
+<div class="modal" id="modal_consult">
+  <div class="modal__wrap">
+    <div class="modal__body">
+      <h3 class="modal__title">Отримати консультацію</h3>
+      <p class="modal__text">Заповніть форму. Наш спеціаліст передзвонить у найближчій час</p>
+      <form action="/" class="modal__form form">
+        <div class="form__group">
+          <div class="form__icon">
+            <svg><use xlink:href="img/icons/icons.svg#input_name"></use></svg>
+          </div>
+          <input type="text" name="name" class="form__input" placeholder="Ваше ім’я"/>
+        </div>
+        <div class="form__group">
+          <div class="form__icon">
+            <svg><use xlink:href="img/icons/icons.svg#input__phone"></use></svg>
+          </div>
+          <input type="phone" name="tel" class="form__input" placeholder="+380 _ _ _"/>
+        </div>
+        <button type="submit" class="form__btn btn btn--orange">
+          <span>Надіслати</span>
+          <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+        </button>
+      </form>
+    </div>
+    <div class="modal__decor">
+      <picture><source srcset="img/modal-decor.webp" type="image/webp"><img src="img/modal-decor.png" alt="" loading="lazy" class="img-full" /></picture>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal--done" id="modal_consult-done">
+  <div class="modal__wrap">
+    <div class="modal__body">
+      <div class="modal__done">
+        <picture><source srcset="img/modal-done.webp" type="image/webp"><img src="img/modal-done.png" alt="" loading="lazy" class="img-full" /></picture>
+      </div>
+      <h3 class="modal__title">Номер телефону надіслано</h3>
+      <p class="modal__text">Наш спеціаліст зв’яжеться з вами у найближчий час</p>
+      <a href="/" class="btn btn--orange">
+        <span>Повернутись на сайт</span>
+        <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="modal modal--done" id="modal_done">
+  <div class="modal__wrap">
+    <div class="modal__body">
+      <div class="modal__done">
+        <picture><source srcset="img/modal-done.webp" type="image/webp"><img src="img/modal-done.png" alt="" loading="lazy" class="img-full" /></picture>
+      </div>
+      <h3 class="modal__title">ВАША ЗАЯВКА НАДІСЛАНА</h3>
+      <p class="modal__text">Наш спеціаліст зв’яжеться з вами для уточнення деталей у найближчий час</p>
+      <a href="/" class="btn btn--orange">
+        <span>Повернутись на сайт</span>
+        <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+  
+  
+  <script src="js/plugins/plugins.min.js?_v=20240308123816"></script>
+
+<script src="js/app.min.js?_v=20240308123816"></script>
+ 
+</body>
+
+</html>
