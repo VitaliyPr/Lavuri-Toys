@@ -39,9 +39,9 @@
 		
     </script>
     	
-	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240308123816"> 
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240309145054"> 
 	
-	<link rel="stylesheet" href="css/style.min.css?_v=20240308123816">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240309145054">
 
 
 
@@ -456,16 +456,16 @@
             <div class="form__icon">
               <svg><use xlink:href="img/icons/icons.svg#input_name"></use></svg>
             </div>
-            <input type="text" name="name" class="form__input" placeholder="Ваше ім’я">
+            <input type="text" name="name" class="form__input" placeholder="Ваше ім’я" required>
           </div>
           <div class="form__group">
             <div class="form__icon">
               <svg><use xlink:href="img/icons/icons.svg#input__phone"></use></svg>
             </div>
-            <input type="phone" name="tel" class="form__input" placeholder="+380 _ _ _">
+            <input type="phone" name="tel" class="form__input" placeholder="+380 _ _ _" required>
           </div>
           <div class="upload-file__wrapper">
-            <input type="file" name="files[]" id="upload-file__input_1" class="upload-file__input" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip" multiple>
+            <input type="file" name="files" id="upload-file__input_1" class="upload-file__input" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip" multiple required>
             <label class="upload-file__label" for="upload-file__input_1">
               <p class="upload-file__p">Завантажити фото</p>
               <svg class="upload-file__icon"><use xlink:href="img/icons/icons.svg#input__download"></use></svg>
@@ -475,7 +475,7 @@
           <textarea name="message" class="form__textarea" placeholder="Опишіть іграшку. Можете вказати бажані розміри та матеріал...."></textarea>
           <div class="chbox">
             <label class="chbox__label">
-              <input type="checkbox" class="chbox__input" value="" >
+              <input type="checkbox" name="agree" class="chbox__input" value="">
               <span class="chbox__icon"></span>
               <span class="chbox__text">Реєструючись я надаю згоду на обробку своїх персональних даних відповідно до <a href="#">Політики конфідеційності</a></span>
             </label>
@@ -632,7 +632,7 @@
     <div class="modal__body">
       <h3 class="modal__title">Отримати консультацію</h3>
       <p class="modal__text">Заповніть форму. Наш спеціаліст передзвонить у найближчій час</p>
-      <form action="/" class="modal__form form">
+      <form action="/" class="modal__form form" id="consult_form">
         <div class="form__group">
           <div class="form__icon">
             <svg><use xlink:href="img/icons/icons.svg#input_name"></use></svg>
@@ -691,9 +691,9 @@
 
   
   
-  <script src="js/plugins/plugins.min.js?_v=20240308123816"></script>
+  <script src="js/plugins/plugins.min.js?_v=20240309145054"></script>
 
-<script src="js/app.min.js?_v=20240308123816"></script>
+<script src="js/app.min.js?_v=20240309145054"></script>
  
 </body>
 
