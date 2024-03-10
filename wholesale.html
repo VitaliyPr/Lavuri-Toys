@@ -39,9 +39,9 @@
 		
     </script>
     	
-	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240309145054"> 
+	<link rel="stylesheet" href="css/plugins/plugins.min.css?_v=20240310143142"> 
 	
-	<link rel="stylesheet" href="css/style.min.css?_v=20240309145054">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240310143142">
 
 
 
@@ -58,12 +58,11 @@
     </div>
     <div class="header__logo logo">
       <picture>
-        <source media="(max-width: 992px)" srcset="img/header-logo-mob.png">
-        <img src="img/header-logo.png" alt="Lavuri toys" loading="lazy" class="img-full">
+        <source media="(max-width: 992px)" srcset="img/header-logo-mob.png" />
+        <img src="img/header-logo.png" alt="Lavuri toys" loading="lazy" class="img-full" />
       </picture>
     </div>
-    <div class="header__row">
-      <div class="menu" id="menu">
+    <div class="menu" id="menu">
   <div class="menu__close">
     <svg><use xlink:href="img/icons/icons.svg#close"></use></svg>
   </div>
@@ -73,11 +72,11 @@
     </div>
     <div class="menu__body">
       <nav class="menu__nav menu__nav--wholesale nav">
-  <a href="#" class="nav__link">Наші пропозиції</a>
-  <a href="#" class="nav__link">Як ми працюємо</a>
-  <a href="#" class="nav__link">Вартість</a>
-  <a href="#" class="nav__link">Питання і відповіді</a>
-  <a href="#" class="nav__link">Контакти</a>
+  <a href="#propositions" class="nav__link">Наші пропозиції</a>
+  <a href="#howwork" class="nav__link">Як ми працюємо</a>
+  <a href="#price" class="nav__link">Вартість</a>
+  <a href="#accordion" class="nav__link">Питання і відповіді</a>
+  <a href="#contacts" class="nav__link">Контакти</a>
 </nav>
 
       <div class="menu__lang lang">
@@ -90,29 +89,31 @@
       <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
     </a>
     <div class="menu__social social">
-      <a href="#" class="social__item">
+      <a href="https://www.instagram.com/lavuri.toys?igsh=MW1tM2NpenNjaGs2Yw==" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-instagram"></use></svg>
 </a>
-<a href="#" class="social__item">
+<a href="tg://resolve?domain=+380631798384" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-telegram"></use></svg>
 </a>
-<a href="#" class="social__item">
+<a href="viber://chat?number=%2B380631798384" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-viber"></use></svg>
 </a>
-<a href="#" class="social__item">
+<a href="whatsapp://send?phone=+380631798384" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-whatsapp"></use></svg>
 </a>
     </div>
   </div>
 </div>
 
-      <a href="telto:+380631798384" class="btn btn--border btn--phone">
+    <div class="header__row">
+      <a href="tel:+380631798384" class="btn btn--border btn--phone">
         <svg><use xlink:href="img/icons/icons.svg#phone"></use></svg>
         <span>+38 (063) 179 83 84</span>
       </a>
     </div>
   </div>
 </header>
+
 
   <main>
 
@@ -128,11 +129,11 @@
           <span class="bg-text--orange">від 100 шт</span>
         </h4>
         <div class="hero__btns">
-          <a href="#" class="btn btn--green">
+          <a href="#price" class="btn btn--green">
             <span>Замовити іграшку</span>
             <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
           </a>
-          <a href="#" class="btn btn--border">Отримати консультацію</a>
+          <a href="#modal_consult" data-fancybox class="btn btn--border">Отримати консультацію</a>
         </div>
       </div>
       <div class="hero__picture">
@@ -142,22 +143,22 @@
         </picture>
       </div>
     </div>
-    <div class="hero__social social"><a href="#" class="social__item">
+    <div class="hero__social social"><a href="https://www.instagram.com/lavuri.toys?igsh=MW1tM2NpenNjaGs2Yw==" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-instagram"></use></svg>
 </a>
-<a href="#" class="social__item">
+<a href="tg://resolve?domain=+380631798384" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-telegram"></use></svg>
 </a>
-<a href="#" class="social__item">
+<a href="viber://chat?number=%2B380631798384" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-viber"></use></svg>
 </a>
-<a href="#" class="social__item">
+<a href="whatsapp://send?phone=+380631798384" target="_blank" class="social__item">
   <svg><use xlink:href="img/icons/icons.svg#social-whatsapp"></use></svg>
 </a></div>
   </div>
 </section>
 
-    <section class="propositions">
+    <section class="propositions" id="propositions">
   <div class="propositions__container">
     <h2 class="propositions__title">наші пропозиції</h2>
     <div class="propositions__slider swiper" data-propositions>
@@ -238,7 +239,7 @@
         <picture><source srcset="img/wholesale/propositions-info-icon.webp" type="image/webp"><img src="img/wholesale/propositions-info-icon.png" alt="" loading="lazy" class="img-full"></picture>
       </div>
       <p class="propositions-info__text">Якщо у переліку не має пропозиції, яка вас цікавить, зв’яжіться з нами. Ми раді співправцювати та запропонуємо індивіудальне рішення.</p>
-      <a href="#" class="propositions-info__btn btn btn--green btn--wb">
+      <a href="#modal_consult" data-fancybox class="propositions-info__btn btn btn--green btn--wb">
         <span>Зв’язатись</span>
         <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
       </a>
@@ -275,7 +276,7 @@
   </div>
 </section>
 
-    <section class="howwork">
+    <section class="howwork" id="howwork">
   <div class="howwork__container">
     <div class="howwork__head">
       <h2>Як ми працюємо</h2>
@@ -330,7 +331,7 @@
         </div>
       </div>
     </div>
-    <a href="#" class="howwork__btn btn btn--green btn--big">
+    <a href="#price" class="howwork__btn btn btn--green btn--big">
       <span>Прорахувати замовлення</span>
       <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
     </a>
@@ -477,7 +478,7 @@
 </section>
 
 
-    <section class="price">
+    <section class="price" id="price">
   <div class="price__container">
     <div class="price__wrap">
       <div class="price__body">
@@ -507,7 +508,7 @@
           <textarea name="message" class="form__textarea" placeholder="Опишіть іграшку. Можете вказати бажані розміри та матеріал...."></textarea>
           <div class="chbox">
             <label class="chbox__label">
-              <input type="checkbox" name="agree" class="chbox__input" value="">
+              <input type="checkbox" name="agree" class="chbox__input" value="" checked>
               <span class="chbox__icon"></span>
               <span class="chbox__text">Реєструючись я надаю згоду на обробку своїх персональних даних відповідно до <a href="#">Політики конфідеційності</a></span>
             </label>
@@ -566,14 +567,14 @@
         </div>
       </div>
     </div>
-    <a href="#" class="preparation__btn btn btn--green btn--big">
+    <a href="index.html" class="preparation__btn btn btn--green btn--big">
       <span>Дізнатись більше</span>
       <svg><use xlink:href="img/icons/icons.svg#btn-arrow"></use></svg>
     </a>
   </div>
 </section>
 
-    <section class="question">
+    <section class="question" id="contacts">
   <div class="question__container">
     <div class="question__row question-row">
       <div class="question-row__img">
@@ -587,13 +588,13 @@
         <a href="tel:+380631798384" class="question-row__link">+38 (063) 179 83 84</a>
         <a href="mailto:lavuri.toys@gmail.com" class="question-row__link">lavuri.toys@gmail.com</a>
         <div class="question-row__social social">
-          <a href="#" class="social__item">
+          <a href="viber://chat?number=%2B380631798384" target="_blank" class="social__item">
             <svg><use xlink:href="img/icons/icons.svg#social-viber"></use></svg>
           </a>
-          <a href="#" class="social__item">
+          <a href="tg://resolve?domain=+380631798384" target="_blank" class="social__item">
             <svg><use xlink:href="img/icons/icons.svg#social-telegram"></use></svg>
           </a>
-          <a href="#" class="social__item">
+          <a href="whatsapp://send?phone=+380631798384" target="_blank" class="social__item">
             <svg><use xlink:href="img/icons/icons.svg#social-whatsapp"></use></svg>
           </a>
         </div>
@@ -602,17 +603,16 @@
     <div class="question__item">
       <p class="question-item__text">Приєднуйтесь до нас в <b>Instagram</b></p>
       <div class="question-item__social">
-        <a href="#" class="social__item">
+        <a href="https://www.instagram.com/lavuri.toys?igsh=MW1tM2NpenNjaGs2Yw==" target="_blank" class="social__item">
           <svg><use xlink:href="img/icons/icons.svg#social-instagram"></use></svg>
         </a>
       </div>
-      <a href="#" class="question-item__link">@lavuri.toys</a>
+      <a href="https://www.instagram.com/lavuri.toys?igsh=MW1tM2NpenNjaGs2Yw==" target="_blank" class="question-item__link">@lavuri.toys</a>
       <div class="question-item__mouse">
         <picture><source srcset="img/retail/question-mouse.webp" type="image/webp"><img src="img/retail/question-mouse.png" alt="" loading="lazy" class="img-full"></picture>
       </div>
     </div>
     <div class="question__picture">
-      
       <picture>
         <source media="(max-width: 992px)" srcset="img/wholesale/question-img-mob.png" />
         <img src="img/wholesale/question-img.png" alt="" loading="lazy" class="img-full" />
@@ -636,15 +636,15 @@
         </picture>
       </div>
       <nav class="footer__nav nav">
-  <a href="#" class="nav__link">Наші пропозиції</a>
-  <a href="#" class="nav__link">Як ми працюємо</a>
-  <a href="#" class="nav__link">Вартість</a>
-  <a href="#" class="nav__link">Питання і відповіді</a>
-  <a href="#" class="nav__link">Контакти</a>
+  <a href="#propositions" class="nav__link">Наші пропозиції</a>
+  <a href="#howwork" class="nav__link">Як ми працюємо</a>
+  <a href="#price" class="nav__link">Вартість</a>
+  <a href="#accordion" class="nav__link">Питання і відповіді</a>
+  <a href="#contacts" class="nav__link">Контакти</a>
 </nav>
 
     </div>
-    <a href="telto:+380631798384" class="btn btn--whiteb btn--phone">
+    <a href="tel:+380631798384" class="btn btn--whiteb btn--phone">
       <svg><use xlink:href="img/icons/icons.svg#phone"></use></svg>
       <span>+38 (063) 179 83 84</span>
     </a>
@@ -715,9 +715,9 @@
 
   
   
-  <script src="js/plugins/plugins.min.js?_v=20240309145054"></script>
+  <script src="js/plugins/plugins.min.js?_v=20240310143142"></script>
 
-<script src="js/app.min.js?_v=20240309145054"></script>
+<script src="js/app.min.js?_v=20240310143142"></script>
  
 </body>
 
