@@ -634,6 +634,15 @@ p {
   margin-bottom: 1.2rem;
 }
 
+.modal__text a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--orange);
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
 .modal__form .form__btn {
   border: 1px solid var(--orange);
 }
@@ -788,11 +797,24 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 0.6rem;
   margin: 0;
   list-style-type: none;
+}
+
+.work__slider .slick-dots li {
+  display: none;
+}
+
+.work__slider .slick-dots li.slick-active,
+.work__slider .slick-dots li.before,
+.work__slider .slick-dots li.after {
+  display: block;
 }
 
 .work__slider .slick-dots button {
@@ -1096,6 +1118,10 @@ p {
   line-height: 1.5833333333;
 }
 
+.form__group span.error.is-hidden {
+  display: none;
+}
+
 .form__icon {
   position: absolute;
   left: 1.6rem;
@@ -1110,6 +1136,17 @@ p {
 .form__icon svg {
   width: 100%;
   height: 100%;
+}
+
+.form__pre {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  position: absolute;
+  top: 1.2rem;
+  left: 4.5rem;
+  z-index: 2;
+  color: var(--text);
 }
 
 .form__input {
@@ -1146,6 +1183,10 @@ p {
 
 .form__input.error {
   border-color: var(--error);
+}
+
+.form__input--tel {
+  padding-left: 8.5rem;
 }
 
 .form__textarea {
@@ -1189,6 +1230,10 @@ p {
   width: 100% !important;
 }
 
+.form__hidden {
+  display: none !important;
+}
+
 .form .upload-file__wrapper:not(:last-child) {
   margin-bottom: 0.8rem;
 }
@@ -1221,6 +1266,10 @@ p {
       -ms-flex-order: 3;
           order: 3;
   margin-left: auto;
+}
+
+.upload-file__wrapper span.error.is-hidden {
+  display: none;
 }
 
 .upload-file__input {
@@ -1628,6 +1677,9 @@ p {
 .trust-slider__item img {
   width: 80%;
   height: auto;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .trust-slider__arrow_prev {
@@ -2243,6 +2295,11 @@ p {
 
   .modal__text:not(:last-child) {
     margin-bottom: 2.4rem;
+  }
+
+  .modal__text a {
+    font-size: 1.8rem;
+    line-height: 1.2222222222;
   }
 
   .section__container--p {
@@ -3516,6 +3573,10 @@ p {
   }
 
   .lang__btn:hover {
+    color: var(--green);
+  }
+
+  .modal__text a:hover {
     color: var(--green);
   }
 
